@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
+</head>
+
+<body>
+
+    <div class="container bgimg" style="height: 100vh;overflow: auto;">
+        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row" style="background: transparent;">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+              <a class="navbar-brand brand-logo" href="index.html"><img src="./assets/images/1024 x 1024.png"></a>
+              <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                <span class="mdi mdi-menu" style="color: #fff;"></span>
+              </button>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-stretch">
+              <ul class="navbar-nav navbar-nav-right">
+                <li class="nav-item" style="margin-right: 20px;">
+                    <a href="" class="mb-1" style="color: #7e7e7e;">Clients & Agencies</a>
+                </li>
+                <li class="nav-item" style="margin-right: 20px;">
+                    <a href="" class="mb-1" style="color: #7e7e7e;">Content Community</a>
+                </li>
+                <li class="nav-item" style="margin-right: 20px;">
+                    <a href="" class="mb-1" style="color: #7e7e7e;">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="padding: 0px;;">
+                        <img src="./assets/images/Lets-Begin-Fuschia---Transparent (1).png">
+                    </button>
+                </li>
+              </ul>
+              <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                data-toggle="offcanvas">
+                <span class="mdi mdi-menu"></span>
+              </button>
+            </div>
+          </nav>
+          <!-- <div class="container bgimg"></div> -->
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content modprops">
+
+                    <!-- Modal Header -->
+                    <!-- <div class="modal-header mFooter">
+                        <h4 class="modal-title" style="text-align: center;"><img src="./assets/images/Lets-Begin-Fuschia---Transparent (1).png"></h4>
+                    </div> -->
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="mFooter" style="background-color: #fff;">
+                            <h4 class="modal-title" style="text-align: center;"><img src="./assets/images/Lets-Begin-Fuschia---Transparent (1).png"></h4>
+                        </div>
+                        <div class="form-group" style="text-align: center;">
+                            <label for="uname" style="font-weight: bolder;">Username:</label>
+                            <input type="text" class="form-control loginFields" id="uname" placeholder="enter name" name="uname" required>
+                        </div>
+                        <div class="form-group" style="text-align: center;">
+                            <label for="pwd" style="font-weight: bolder;">Password:</label>
+                            <input type="password" class="form-control loginFields" id="pwd" placeholder="enter password" name="pswd" required>
+                            <a href=""><label for="pwd" style="color: #A8A8A8;line-height: 2;">(Forgot Password)</label></a>
+                        </div>
+                        <div class="row centerAlign">
+                            <button type="button" class="btn btn-outline-info btn-fw" style="width: 53%;">LOG IN</button>
+                        </div>
+                        <div class="row centerAlign" style="margin-top: 20px;">
+                            <!-- <p>OR</p> -->
+                            <label style="color: #A8A8A8;">OR</label>
+                        </div>
+                        <div class="row centerAlign">
+                            <a href="#" class="fb btn" style="background: #3B5998;color: white;width: 53%;">
+                                <i class="fa fa-facebook fa-fw"></i> Continue with Facebook
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer mFooter">
+                        <p style="text-align: center;">Click Here to <a class="linkProps" href="">Create a New Account</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

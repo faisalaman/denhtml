@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purple Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <!-- Chart JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css" integrity="sha512-SUJFImtiT87gVCOXl3aGC00zfDl6ggYAw5+oheJvRJ8KBXZrr/TMISSdVJ5bBarbQDRC2pR5Kto3xTR0kpZInA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+<!--    
+    <script type="text/javascript">
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer",
+            {
+                title:{
+                    text: "Charts With Different Fill Opacity"
+                },
+                data: [
+                {        
+                    type: "area",  
+                    fillOpacity: .3, //**Try various Opacity values **//
+                    dataPoints: [
+                        { x: 10, y: 71 },
+                        { x: 20, y: 55},
+                        { x: 30, y: 50 },
+                        { x: 40, y: 65 },
+                        { x: 50, y: 95 },
+                        { x: 60, y: 68 },
+                        { x: 70, y: 28 },
+                        { x: 80, y: 34 },
+                        { x: 90, y: 14}
+                    ]
+                }
+                ]
+            });
+            chart.render();
+        }
+        </script>
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+</head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="index.html">DEN</a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu" style="color: #fff;"></span>
+          </button>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="count-symbol bg-danger"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                <h6 class="p-3 mb-0">Notifications</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <i class="mdi mdi-calendar"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">Event today</h6>
+                    <p class="text-gray ellipsis mb-0"> Just a reminder that you have an event today </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-warning">
+                      <i class="mdi mdi-settings"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">Settings</h6>
+                    <p class="text-gray ellipsis mb-0"> Update dashboard </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-info">
+                      <i class="mdi mdi-link-variant"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">Launch Admin</h6>
+                    <p class="text-gray ellipsis mb-0"> New admin wow! </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <h6 class="p-3 mb-0 text-center">See all notifications</h6>
+              </div>
+            </li>
+            <li class="nav-item nav-profile dropdown">
+              <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <div class="nav-profile-img">
+                  <img src="assets/images/faces/face1.jpg" alt="image">
+                  <span class="availability-status online"></span>
+                </div>
+                <div class="nav-profile-text">
+                  <p class="mb-1">David Greymaax</p>
+                </div>
+              </a>
+              <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-cached mr-2 text-success"></i> Activity Log </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>
+              </div>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        
+            <!-- <a class="nav-item nav-profile" href="#" class="nav-link">
+              <div class="nav-profile-text d-flex flex-column">
+                <span class="font-weight-bold heading mb-2">DEN PORTAL</span>
+              </div>
+            </a> -->
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="#" class="nav-link">
+                <div class="nav-profile-text d-flex flex-column">
+                  <span class="font-weight-bold heading mb-2">MY PROFILE</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">
+                <i class="mdi mdi-currency-usd menu-icon"></i>
+                <span class="menu-title">Link Social Account</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="mdi mdi-account menu-icon"></i>
+                <span class="menu-title">My Demographics</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/icons/mdi.html">
+                <i class="mdi mdi-contacts menu-icon"></i>
+                <span class="menu-title">My Contact Information</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/forms/basic_elements.html">
+                <i class="mdi mdi-refresh menu-icon"></i>
+                <span class="menu-title">My Projects</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/charts/chartjs.html">
+                <i class="mdi mdi-briefcase menu-icon"></i>
+                <span class="menu-title">Relink Social Accounts</span>                
+              </a>
+            </li>
+          </ul>
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="#" class="nav-link">
+                <div class="nav-profile-text d-flex flex-column">
+                  <span class="font-weight-bold heading mb-2">MY WORK</span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">
+                <i class="mdi mdi-currency-usd menu-icon"></i>
+                <span class="menu-title">Campaign List</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="mdi mdi-account menu-icon"></i>
+                <span class="menu-title">My Plan Details</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+                <i class="mdi mdi-bullhorn menu-icon"></i>
+                <span class="menu-title">My Campaigns</span> 
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 plpr">
+                        <div class="card">
+                            <div class="card-horizontal col-12" style="margin-bottom: 10px">
+                                <div class="img-square-wrapper col-2" style="padding-top: 10px;">
+                                    <!-- <p><img class=" img-fluid" src="./assets/images/faces/face18.jpg" alt="card image"></p> -->
+                                    <img class="img-fluid" src="assets/images/faces/face1.jpg" alt="image" style="border-radius: 50%;">
+                                </div>
+                                <div class="card-body1 col-10">
+                                    <h4 style="color: black;margin-bottom: 0px;">Baqir Agilitize</h4>
+                                    <i class="fa fa-envelope" aria-hidden="true" style="color: #FB004F;"></i><label style="color: black;font-size: 12px;margin-left: 2px;">agilitize@den.com.pk</label>
+                                    <p class="card-text">
+                                     Test</p>
+
+                                    <div class="row col-12" style="margin: 5px;">
+                                        <div class="col-1.5 profIconProps">
+                                            <i class="fa fa-map-marker" aria-hidden="true" style="color: #FB004F;"></i><label class="profIcons">Lahore</label>
+                                        </div>
+                                        
+                                        <div class="col-2.5 profIconProps">
+                                            <i class="fa fa-language" aria-hidden="true" style="color: #FB004F;"></i><label class="profIcons">English (US)</label>
+                                        </div>
+                                        <div class="col-1.5 profIconProps">
+                                            <i class="fa fa-venus-mars" aria-hidden="true" style="color: #FB004F;"></i><label class="profIcons">Male</label>
+                                        </div>
+                                        
+                                        <div class="col-2.5 profIconProps">
+                                            <i class="fa fa-users" aria-hidden="true" style="color: #FB004F;"></i><label class="profIcons">29 Years Old</label>
+                                        </div>
+                                        <div class="col-3 profIconProps1">
+                                            <i class="fa fa-phone" aria-hidden="true" style="color: #FB004F;"></i><label class="profIcons">0421345678</label>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer row col-12 fprops">
+                                <div class="col-2">
+                                </div>
+                                <div class="col-10">
+                                    <h4 class="row" style="margin: 0px;">CATEGORIES</h4>
+                                <div class="row" style="margin-left: 30px;width: 30%;">
+                                    <button class="btn btn-danger btnprops">FOOD</button>
+                                    <button class="btn btn-danger btnprops">MEDIA</button>
+                                    <button class="btn btn-danger btnprops">MUSIC</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row col-12" style="margin-top: 40px;">
+                
+                    <div class="col-4"><button class="btn btnIconProps"><i class="fa fa-instagram btn-icon-prepend" aria-hidden="true"></i> Digital Engagement Network </button></div>
+                    <div class="col-4"><button class="btn btnIconProps"><i class="fa fa-instagram  btn-icon-prepend" aria-hidden="true"></i> FOODADA </button></div>
+                    <div class="col-4"><button class="btn btnIconProps1"><i class="fa fa-facebook-square btn-icon-prepend" aria-hidden="true"></i> Agitilize </button></div>
+            </div>
+            <div id="proBanner">
+                <div class="col-12">
+                  <span class="d-flex align-items-center" style="height: 10rem;">
+                    <div class="card-style2" style="padding: 0px;">
+                      <div class="row col-12 row1">
+                      <div class="col-3 card-style2">
+                        <div class="col-3">
+                          <i class="fa fa-bookmark-o" aria-hidden="true" style="color: #FB004F;font-size: 45px;"></i></a>
+                        </div>
+                        <div class="col-9">
+                          <label class="row views-title">FOLLOWERS</label>
+                          <h1 class="row label-props">691</h1>
+                          <div class=" row progress1" style="width: 100%">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;background-color: #FB004F;"
+                              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <label class="row ltext">0% increase in 30 days</label>
+                        </div>
+                      </div>
+                      <div class="col-3 card-style2">
+                        <div class="col-3">
+                          <i class="fa fa-calendar" aria-hidden="true" style="color: #FB004F;font-size: 45px;"></i></a>
+                        </div>
+                        <div class="col-9">
+                          <label class="row views-title">TOTAL IMPRESSIONS</label>
+                          <h1 class="row label-props">33</h1>
+                          <div class=" row progress1" style="width: 100%">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;background-color: #FB004F;"
+                              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <label class="row ltext">0% increase in 30 days</label>
+                        </div>
+                      </div>
+                      <div class="col-3 card-style2">
+                        <div class="col-3">
+                          <i class="fa fa-thumbs-o-up" aria-hidden="true" style="color: #FB004F;font-size: 45px;"></i></a>
+                        </div>
+                        <div class="col-9">
+                          <label class="row views-title">AVERAGE LIKES PER POST</label>
+                          <h1 class="row label-props">12</h1>
+                          <div class=" row progress1" style="width: 100%">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;background-color: #FB004F;"
+                              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <label class="row ltext">0% increase in 30 days</label>
+                        </div>
+                      </div>
+                      <div class="col-3 card-style2">
+                        <div class="col-3">
+                          <i class="fa fa-comments-o" aria-hidden="true" style="color: #FB004F;font-size: 45px;"></i></a>
+                        </div>
+                        <div class="col-9">
+                          <label class="row views-title">ENGAGEMENT RATE</label>
+                          <h1 class="row label-props">1.9%</h1>
+                          <div class=" row progress1" style="width: 100%">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;background-color: #FB004F;"
+                              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <label class="row ltext">0% increase in 30 days</label>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </span>
+                </div>
+              </div>
+              
+            <div class="row">
+                <div class="col-md-6 grid-margin stretch-card" style="padding-right: 0px;">
+                    <div class="row card">
+                        <h4 class="card-header float-left statsProps">FOLLOWERS BY GENDERS</h4>
+                        <div class="card-body" style="background-color: #fff;margin: 0 auto;">
+                            <canvas width="400" style="margin: 0 auto;"  id="myChart1"></canvas>
+            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 grid-margin stretch-card" style="padding-right: 0px;">
+                    <div class="row card">
+                        <h4 class="card-header float-left statsProps">FOLLOWERS BY AGE</h4>
+                        <div class="card-body" style="background-color: #fff;">
+                            <div class="row col-12 mtmb">
+                                <div class="col-2">
+                                    <label style="font-size: small;color: #7f7f7f;font-weight: bolder;">13-17</label>
+                                </div>
+                                <div class="col-8 progress1" style="    margin-top: 2px;;width: 100%;height: 15px;padding-left: 0px;padding-right: 0px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;height: 15px;background-color: #FB004F;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                <div class="col-2" style="font-size: small;color: #FB004F;font-weight: bolder;">90%</div>
+                            </div>
+                            <div class="row col-12 mtmb">
+                                <div class="col-2">
+                                    <label style="font-size: small;color: #7f7f7f;font-weight: bolder;">18-24</label>
+                                </div>
+                                <div class="col-8 progress1" style="    margin-top: 2px;;width: 100%;height: 15px;padding-left: 0px;padding-right: 0px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;height: 15px;background-color: #FB004F;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                <div class="col-2" style="font-size: small;color: #FB004F;font-weight: bolder;">90%</div>
+                            </div>
+                            <div class="row col-12 mtmb">
+                                <div class="col-2">
+                                    <label style="font-size: small;color: #7f7f7f;font-weight: bolder;">25-34</label>
+                                </div>
+                                <div class="col-8 progress1" style="    margin-top: 2px;;width: 100%;height: 15px;padding-left: 0px;padding-right: 0px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;height: 15px;background-color: #FB004F;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                <div class="col-2" style="font-size: small;color: #FB004F;font-weight: bolder;">90%</div>
+                            </div>
+                            <div class="row col-12 mtmb">
+                                <div class="col-2">
+                                    <label style="font-size: small;color: #7f7f7f;font-weight: bolder;">35-44</label>
+                                </div>
+                                <div class="col-8 progress1" style="    margin-top: 2px;;width: 100%;height: 15px;padding-left: 0px;padding-right: 0px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;height: 15px;background-color: #FB004F;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                <div class="col-2" style="font-size: small;color: #FB004F;font-weight: bolder;">90%</div>
+                            </div>
+                            <div class="row col-12 mtmb">
+                                <div class="col-2">
+                                    <label style="font-size: small;color: #7f7f7f;font-weight: bolder;">45-54</label>
+                                </div>
+                                <div class="col-8 progress1" style="    margin-top: 2px;;width: 100%;height: 15px;padding-left: 0px;padding-right: 0px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;height: 15px;background-color: #FB004F;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                <div class="col-2" style="font-size: small;color: #FB004F;font-weight: bolder;">90%</div>
+                            </div>
+                            <div class="row col-12 mtmb">
+                                <div class="col-2">
+                                    <label style="font-size: small;color: #7f7f7f;font-weight: bolder;">55+</label>
+                                </div>
+                                <div class="col-8 progress1" style="    margin-top: 2px;;width: 100%;height: 15px;padding-left: 0px;padding-right: 0px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;height: 15px;background-color: #FB004F;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                <div class="col-2" style="font-size: small;color: #FB004F;font-weight: bolder;">90%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 grid-margin stretch-card" style="padding-right: 0px;">                   
+                  <div class="row card">
+                      <h4 class="card-header float-left statsProps">FOLLOWERS BY CITY</h4>
+                      <div class="card-body" style="background-color: #fff;">
+                            <div class="row col-12 mtmb">
+                                <div class="col-2">
+                                    <label style="font-size: small;color: #7f7f7f;font-weight: bolder;">Lahore</label>
+                                </div>
+                                <div class="col-8 progress1" style="    margin-top: 2px;;width: 100%;height: 15px;padding-left: 0px;padding-right: 0px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;height: 15px;background-color: #4F84ED;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                <div class="col-2" style="font-size: small;color: #4F84ED;font-weight: bolder;">90%</div>
+                            </div>
+                            <div class="row col-12 mtmb">
+                                <div class="col-2">
+                                    <label style="font-size: small;color: #7f7f7f;font-weight: bolder;">Karachi</label>
+                                </div>
+                                <div class="col-8 progress1" style="    margin-top: 2px;;width: 100%;height: 15px;padding-left: 0px;padding-right: 0px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;height: 15px;background-color: #4F84ED;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                <div class="col-2" style="font-size: small;color: #4F84ED;font-weight: bolder;">90%</div>
+                            </div>
+                            <div class="row col-12 mtmb">
+                                <div class="col-2">
+                                    <label style="font-size: small;color: #7f7f7f;font-weight: bolder;">Islamabad</label>
+                                </div>
+                                <div class="col-8 progress1" style="    margin-top: 2px;;width: 100%;height: 15px;padding-left: 0px;padding-right: 0px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;height: 15px;background-color: #4F84ED;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                <div class="col-2" style="font-size: small;color: #4F84ED;font-weight: bolder;">90%</div>
+                            </div>
+                            <div class="row col-12 mtmb">
+                                <div class="col-2">
+                                    <label style="font-size: small;color: #7f7f7f;font-weight: bolder;">Dehli</label>
+                                </div>
+                                <div class="col-8 progress1" style="    margin-top: 2px;;width: 100%;height: 15px;padding-left: 0px;padding-right: 0px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;height: 15px;background-color: #4F84ED;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                <div class="col-2" style="font-size: small;color: #4F84ED;font-weight: bolder;">90%</div>
+                            </div>
+                            <div class="row col-12 mtmb">
+                                <div class="col-2">
+                                    <label style="font-size: small;color: #7f7f7f;font-weight: bolder;">Mumbai</label>
+                                </div>
+                                <div class="col-8 progress1" style="    margin-top: 2px;;width: 100%;height: 15px;padding-left: 0px;padding-right: 0px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;height: 15px;background-color: #4F84ED;"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                <div class="col-2" style="font-size: small;color: #4F84ED;font-weight: bolder;">90%</div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-md-6 grid-margin stretch-card">
+                  <div class="row card">
+                    <h4 class="card-header float-left statsProps">POST ENGAGEMENT</h4>
+                    <div class="card-body" style="background-color: #fff;margin: 0 auto;">
+                      <!-- <div id="chartContainer" style="height: 300px; width: 100%;"></div> -->
+                      <canvas id="myChart" width="400" height="400" style="margin: 0 auto;"></canvas>
+                    </div>
+                  </div>
+                </div>
+            </div>  
+            <!-- <div class="row">
+                <div class="col-12 grid-margin"> -->
+                  <!-- <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Recent Tickets</h4>
+                      
+                    </div>
+                  </div> -->
+                <!-- </div>
+              </div>   -->
+              <div class="table-responsive" style="background: #fff;">
+                <table class="table">
+                    <thead style="background: #FB004F;color: #fff;">
+                        <tr>
+                            <th> Campaign Name </th>
+                            <th> Product </th>
+                            <th> Start Date </th>
+                            <th> End Date </th>
+                            <th> Campaign Status </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="color: #FB004F;">19 JUNE 2020</td>
+                            <td>Fruita Vital</td>
+                            <td> 19-JUN-2020</td>
+                            <td> 30-JUN-2020</td>
+                            <td> . </td>
+                        </tr>
+                        <tr>
+                            <td style="color: #FB004F;">19 JUNE 2020</td>
+                            <td>Fruita Vital</td>
+                            <td> 19-JUN-2020</td>
+                            <td> 30-JUN-2020</td>
+                            <td> . </td>
+                        </tr>
+                        <tr>
+                            <td style="color: #FB004F;">19 JUNE 2020</td>
+                            <td>Fruita Vital</td>
+                            <td> 19-JUN-2020</td>
+                            <td> 30-JUN-2020</td>
+                            <td> . </td>
+                        </tr>
+                        <tr>
+                            <td style="color: #FB004F;">19 JUNE 2020</td>
+                            <td>Fruita Vital</td>
+                            <td> 19-JUN-2020</td>
+                            <td> 30-JUN-2020</td>
+                            <td> . </td>
+                        </tr>
+                        <tr>
+                            <td style="color: #FB004F;">19 JUNE 2020</td>
+                            <td>Fruita Vital</td>
+                            <td> 19-JUN-2020</td>
+                            <td> 30-JUN-2020</td>
+                            <td> . </td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <!-- End custom js for this page -->
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js" integrity="sha512-G8JE1Xbr0egZE5gNGyUm1fF764iHVfRXshIoUWCTPAbKkkItp/6qal5YAHXrxEu4HNfPTQs6HOu3D5vCGS1j3w==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js" integrity="sha512-vBmx0N/uQOXznm/Nbkp7h0P1RfLSj0HQrFSzV8m7rOGyj30fYAOKHYvCNez+yM8IrfnW0TCodDEjRqf6fodf/Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js" integrity="sha512-QEiC894KVkN9Tsoi6+mKf8HaCLJvyA6QIRzY5KrfINXYuP9NxdIkRQhGq3BZi0J4I7V5SidGM3XUQ5wFiMDuWg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["15/05", "25/05", "11/06", "19/06", "29/06", "17/05", "09/05", "13/07", "03/07", "22/06", "01/06", "27/05", "15/07"],
+                    datasets: [{
+                        data: [23, 33, 15, 22, 35, 10, 19, 5, 27, 16, 11, 29, 07],
+                        borderColor: "#3e95cd",
+                        Color: "blue",
+                        fill: true
+                    },
+                    ]
+                },
+                options: {
+                    // title: {
+                    //     // display: true,
+                    //     // text: ''
+                    // },
+                    responsive: true, // Instruct chart js to respond nicely.
+                    maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
+                }
+
+            });
+                    myChart.canvas.parentNode.style.height = '344px';
+                    // myChart.canvas.parentNode.style.width = '300px';
+        
+            var ctx = document.getElementById("myChart1").getContext('2d');
+
+                var myChart1 = new Chart(ctx, {
+                    
+                    type: 'doughnut',
+                    data: {
+                        // labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai"],
+                        datasets: [{
+                            data: [25,75], // Specify the data values array
+
+                            borderColor: ['#16D8D8','#4F84ED'], // Add custom color border 
+                            backgroundColor: ['#16D8D8','#4F84ED'], // Add custom color background (Points and Fill)
+                            borderWidth: 1 // Specify bar border width
+                        }]
+                    },
+                    options: {
+                        responsive: true, // Instruct chart js to respond nicely.
+                        maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
+                    }
+});
+                    myChart1.canvas.parentNode.style.height = '344px';
+                    myChart1.canvas.parentNode.style.width = '300px';</script>
+</body>
+</html>

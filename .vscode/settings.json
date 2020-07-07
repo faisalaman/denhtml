@@ -1,0 +1,4 @@
+{
+    "appService.deploySubpath": ".",
+    "appService.defaultWebAppToDeploy": "/subscriptions/332a73a1-95dd-4e99-8ed7-c977771399b4/resourceGroups/faman_rg_Windows_westeurope/providers/Microsoft.Web/sites/dannhtml"
+}
