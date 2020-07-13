@@ -13338,6 +13338,243 @@
     border-radius: 50%;
     height: 25px;
     padding: 4px;
-    margin-right: 5px;
+    margin-right: 5px;}
+.mrg-auto{
+  margin: 0 auto;}
+.clrW{
+  color: #fff;}
+.mb-10{
+  margin-bottom: 10px;}
+.mt-20{
+  margin-top: 20px;}
+
+.pt-10{
+  padding-top: 10px;}
+.pb-10{
+  padding-bottom: 10px;
 }
+.br-50{
+  border-radius: 50%;}
+.nameProps{
+  color: black;
+  margin-bottom: 0px;}
+.clrDef{
+  color: #FB004F;}
+.mailProps{
+  color: black;
+  font-size: 12px;
+  margin-left: 2px;}
+.fz-12{
+  font-size: 12px;}
+.mrg5{
+  margin: 5px;}
+.mrg-0{
+  margin: 0px;}
+.ctgProps{
+  margin-left: 30px;
+  width: 30%;}
+.mt-40{
+  margin-top: 40px;}
+.h-10{
+  height: 10rem;}
+.pd-0{
+  padding: 0px;}
+.bmProps{
+  color: #FB004F;
+  font-size: 45px;}
+.w-100{
+  width: 100%;}
+.pbProps{
+  width: 100%;
+  background-color: #FB004F;}
+.cldrProps{
+  color: #FB004F;
+  font-size: 45px;}
+.pr-0{
+  padding-right: 0px;}
+.contProps{
+  background-color: #fff;
+  margin: 0 auto;}
+.bg-W{
+  background-color: #fff !important;}
+.cityProps{
+  font-size: small;
+  color: #7f7f7f;
+  font-weight: bolder;}
+.pbProps1{
+  margin-top: 2px;
+  width: 100%;
+  height: 15px;
+  padding-left: 0px;
+  padding-right: 0px;}
+.pbProps2{
+  width: 75%;
+  height: 15px;
+  background-color: #4F84ED;}
+.pbProps3{
+  width: 75%;
+  height: 15px;
+  background-color: #FB004F;}
+.nmbrProps{
+  font-size: small;
+  color: #4F84ED;
+  font-weight: bolder;}
+.tbProps{
+  background: #FB004F;
+  color: #fff;}
+.indexIcons{
+  color: #FB004F !important;
+  font-size: 45px;}
+.indpbProps{
+  width: 75%;
+  background-color: #FB004F;}
+.w-90{
+  width: 90%}
+.indCardProps{
+  padding: 0px;
+  width: 100%;}
+.w-45{
+  width: 45px;} 
+.w-40{
+  width: 40%;} 
+.instaIcon{
+  color: #fff;
+  font-size: 35px;}
+.linkSAProps{
+  background: #ece7e7;
+  margin: 2px;
+  padding-top: 10px;
+   margin-bottom: 0px;}
+.linkSAIconProps{
+  color: #FB004F;
+  font-size: xx-large;
+  background: #fff;
+  padding: 12px;
+}
+.linkTextProps{
+  margin-left: auto;
+  color: black;}
+.linkTextProps1{
+  color: #7f7f7f;
+  font-size:12px}
+.linkBtnProps{
+  font-size:12px;
+  font-weight: bolder;
+   padding: 7px;
+   color: #FB004F;
+   border-color: #FB004F;
+   position: absolute;
+   right: 0px;
+   top: 20px;}
+  .linkBtnTextProps{
+    font-size: 12px;
+    margin-right: 2px;}
+.bgc-W{
+  background: white;}
+.linkBcrProps{
+  background: white;
+  border-bottom: 1px colid gray;
+  height: 10vh;
+  color: #7f7f7f}
+.linkCardHeadProps{
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+  height: 7vh;}
+.linkS1Props{
+    background: white !important;
+    display: block;
+    height: auto !important;}
+.linkSProps{
+  background: white !important;
+  display: none;
+  height: auto !important;
+}
+.linkSTextProps{
+    font-size:12px;
+    color: #7f7f7f;}
+.linkS1TextProps{
+    margin-left: 3px;
+     font-size:12px;
+     color: #FB004F;}
+.linkS2TextProps{
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 0px;
+  padding-left: 0px;}
+.linktextBProps{
+  color: black;
+  font-size:12px;}
+.linkBtn1Props{
+  font-size:12px;
+  border:1px solid #FB004F;
+  color: #FB004F;
+  float: left;
+  height: 5vh;
+  margin-left: 10px;}
+.linkS1optProps{
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-top: 10px;}
+.linkS1opt1Props{
+  color: #7f7f7f;
+  font-size:12px;
+  margin-left: 10px;}
+.linkStext2Props{
+  margin: 0 auto;
+  padding: 10px;
+  padding-bottom: 0px;}
+.denMail{
+  background: #3AC37F;
+  height: fit-content;
+  display: inline-block;
+  border-radius: 60px;
+  padding: 1px;
+  font-size: small;}
+.fw-b{
+  font-weight: bolder !important;}
+.linkLikes{
+  font-weight: bolder !important;
+  width: 75%;}
+.dsp-b{
+  display:block;}
+.linkCmnts{
+  display:block;
+  overflow:auto;
+  height:400px;
+  width:100%;}
+.linkCmnts1{
+  white-space: pre-line !important;
+  width: 75%;
+  font-size: 12px !important;}
+.mr-2{
+  margin-right: 2px;}
+.btnSync{
+  font-size:12px;
+  background-color: #ff437d;
+  border:1px solid #FB004F;
+  color: #fff;
+  float: left;
+  height: 5vh;
+  margin-left: 10px;}
+.clrGray{
+  color: #7f7f7f;}
+.linkFormProps{
+  font-weight:bolder;
+  border-radius: 5px;}
+.linkSbtnProps{
+  display: block;
+  margin-left: auto;
+  margin-right: 25px;}
+.linkSbtnProps1{
+  display: none;
+  margin-left: auto;
+  margin-right: 25px;}
+.linkSbtnBrdr{
+  width: 95%;
+  border-top:1px solid #bbb;
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+  margin: 0px auto;}
+.fz-12{
+  font-size: 12px;}
  /* Breadcrumb Properties */
