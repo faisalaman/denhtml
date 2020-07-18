@@ -16,24 +16,24 @@
 
 <body>
 
-    <div class="container-fluid bgimg" style="height: 100vh;overflow: auto;">
-        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row" style="background: transparent;">
+    <div class="container-fluid bgimg cntProps">
+        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row bg-transparent">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
               <a class="navbar-brand brand-logo" href="index.html"><img src="./assets/images/1024 x 1024.png"></a>
               <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-                <span class="mdi mdi-menu" style="color: #fff;"></span>
+                <span class="mdi mdi-menu clrW"></span>
               </button>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-stretch">
               <ul class="navbar-nav navbar-nav-right">
-                <li class="nav-item" style="margin-right: 20px;">
-                    <a href="" class="mb-1" style="color: #7e7e7e;">Clients & Agencies</a>
+                <li class="nav-item mr-20">
+                    <a href="" class="mb-1 clr-gray">Clients & Agencies</a>
                 </li>
-                <li class="nav-item" style="margin-right: 20px;">
-                    <a href="" class="mb-1" style="color: #7e7e7e;">Content Community</a>
+                <li class="nav-item mr-20">
+                    <a href="" class="mb-1 clr-gray">Content Community</a>
                 </li>
-                <li class="nav-item" style="margin-right: 20px;">
-                    <a href="" class="mb-1" style="color: #7e7e7e;">Contact</a>
+                <li class="nav-item mr-20">
+                    <a href="" class="mb-1 clr-gray">Contact</a>
                 </li>
                 <li class="nav-item">
                     <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="padding: 0px;;">
@@ -52,7 +52,7 @@
         <!-- The Modal -->
         <div class="modal fade" id="myModal" data-keyboard="false" data-backdrop="static">
             <div class="modal-dialog">
-                <div class="modal-content modprops" style="width: 100%;">
+                <div class="modal-content modprops w-100">
 
                     <!-- Modal Header -->
                     <!-- <div class="modal-header mFooter">
@@ -60,29 +60,29 @@
                     </div> -->
 
                     <!-- Modal body -->
-                    <div class="modal-body" style="padding-left: 0;padding-right: 0;">
-                        <div class="mFooter" style="background-color: #fff;">
-                            <h4 class="modal-title" style="text-align: center;"><img src="./assets/images/Lets-Begin-Fuschia---Transparent (1).png"></h4>
+                    <div class="modal-body spacing">
+                        <div class="mFooter bg-white ">
+                            <h4 class="modal-title text-cntr"><img src="./assets/images/Lets-Begin-Fuschia---Transparent (1).png"></h4>
                         </div>
-                        <div class="row" style="text-align: center;display: block;">
-                            <p style="color: #787677;;font-size: 12px;">Already have an account?<a href="signIn.html" style="color: #FB004F;">Sign in</a> here</p>
+                        <div class="row text-cntr dsp-b">
+                            <p class="signIn-Clr fz-12">Already have an account?<a class="clrDef" href="signIn.html">Sign in</a> here</p>
                         </div>
                         <div class="row">
-                            <div class="form-group" style="text-align: center;margin: 0 auto;float: none;width: 45%;">
-                                <label for="SelectUserType" style="color: #787677;">User Type</label>
-                                <select class="form-control loginFields" id="SelectUserType" style="border: 1px solid #A8A8A8;">
+                            <div class="form-group fg-Props1">
+                                <label class="signIn-Clr" for="SelectUserType">User Type</label>
+                                <select class="form-control loginFields brdr-gray" id="SelectUserType">
                                     <option>Influencer</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="row" style="margin-top: 20px;;">
-                            <div class="form-group col-6" style="text-align: center;padding-right: 0px;">
-                                <label for="uname" style="color: #787677;font-size: 12px;">Name</label>
+                        <div class="row mt-20">
+                            <div class="form-group col-6 formDiv">
+                                <label class="signIn-Clr fz-12" for="uname">Name</label>
                                 <input type="text" class="form-control loginFields" id="uname" placeholder="Your fullname" name="uname" required>
                             </div>
-                            <div class="form-group col-6" style="text-align: center;padding-left: 0px;">
-                                <label for="SelectGender" style="color: #787677;font-size: 12px;">Gender</label>
-                                <select class="form-control loginFields" id="SelectGender" style="border: 1px solid #A8A8A8;">
+                            <div class="form-group col-6 formDivLeft">
+                                <label class="signIn-Clr fz-12" for="SelectGender">Gender</label>
+                                <select class="form-control loginFields brdr-gray" id="SelectGender">
                                     <option value="" selected>Select Gender</option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
@@ -90,33 +90,33 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-group col-6" style="text-align: center;padding-right: 0px;">
-                                <label for="uname" style="color: #787677;font-size: 12px;">Email</label>
+                            <div class="form-group col-6 formDiv">
+                                <label class="signIn-Clr fz-12" for="uname">Email</label>
                                 <input type="text" class="form-control loginFields" id="uname" placeholder="email@example.com" name="uname" required>
                             </div>
-                            <div class="form-group col-6" style="text-align: center;padding-left: 0px;">
-                                <label for="SelectGender" style="color: #787677;font-size: 12px;">Date of Birth</label>
-                                <select class="form-control loginFields" id="SelectGender"  style="border: 1px solid #A8A8A8;">
+                            <div class="form-group col-6 formDivLeft">
+                                <label class="signIn-Clr fz-12" for="SelectGender">Date of Birth</label>
+                                <select class="form-control loginFields brdr-gray" id="SelectGender">
                                     <option value="" selected>dd-mm-yy</option>
                                 </select>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-group col-6" style="text-align: center;padding-right: 0px;">
-                                <label for="uname" style="color: #787677;font-size: 12px;">Password</label>
+                            <div class="form-group col-6 formDiv">
+                                <label class="signIn-Clr fz-12" for="uname">Password</label>
                                 <input type="password" class="form-control loginFields" id="uname" placeholder="Write your new password" name="uname" required>
                             </div>
-                            <div class="form-group col-6" style="text-align: center;padding-left: 0px;">
-                                <label for="uname" style="color: #787677;font-size: 12px;">Confirm Password</label>
+                            <div class="form-group col-6 formDivLeft">
+                                <label class="signIn-Clr fz-12" for="uname">Confirm Password</label>
                                 <input type="password" class="form-control loginFields" id="uname" placeholder="Confirm your new password" name="uname" required>
                             </div>
                         </div>
-                        <div class="row centerAlign" style="margin:10px">
-                            <input type="checkbox" style="margin-right: 15px;" id="agreeTerms" name="agreeTerms" value="">
-                            <label for="agreeTerms" style="margin-bottom: 0px;color: #787677;font-size: 15px;"> I agree with the <a href="#" style="color: #FB004F;">Terms & Conditions</a></label><br>
+                        <div class="row centerAlign marg-10">
+                            <input class="mr-15" type="checkbox" id="agreeTerms" name="agreeTerms" value="">
+                            <label class="mb-0p signIn-Clr fz-15" for="agreeTerms"> I agree with the <a class="clrDef" href="#">Terms & Conditions</a></label><br>
                         </div>
                         <div class="row centerAlign">
-                            <button type="button" class="btn btn-outline-info btn-fw" style="width: 53%;">SIGN-UP</button>
+                            <button type="button" class="btn btn-outline-info btn-fw w-53">SIGN-UP</button>
                         </div>
                         
                     </div>
