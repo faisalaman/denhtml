@@ -5227,7 +5227,7 @@
   
   .navbar-toggler {
     padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
+    font-size: 2.25rem;
     line-height: 1;
     background-color: transparent;
     border: 1px solid transparent;
@@ -12022,7 +12022,7 @@
   .form-control {
     border: 1px solid #ebedf2;
     font-family: "Montserrat", sans-serif;
-    font-size: 0.8125rem; }
+    font-size: 12px; }
     .form-control:focus {
       background-color: #ffffff;
       color: #000;
@@ -12069,7 +12069,7 @@
         outline: 1px solid #3e4b5b; }
   
   .form-group label {
-    font-size: 0.875rem;
+    font-size: 12px;
     line-height: 1;
     vertical-align: top;
     margin-bottom: .5rem; }
@@ -12343,7 +12343,7 @@
     .table th,
     .table td {
       vertical-align: middle;
-      font-size: 0.875rem;
+      font-size: 12px;
       line-height: 1;
       white-space: nowrap; }
       .table th img,
@@ -12589,7 +12589,7 @@
               margin-left: .8rem;
               margin-right: .8rem; } }
           .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link i {
-            font-size: 1.25rem; }
+            font-size: 2.25rem; }
         .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-toggle:after {
           color: #fff;
           font-size: 1rem; }
@@ -13469,7 +13469,7 @@
    border-color: #FB004F;
    position: absolute;
    right: 0px;
-   top: 20px;}
+   top: 5px;}
   .linkBtnTextProps{
     font-size: 12px;
     margin-right: 2px;}
@@ -13538,7 +13538,7 @@
   font-weight: bolder !important;}
 .linkLikes{
   font-weight: bolder !important;
-  width: 75%;}
+  width: 79%;}
 .dsp-b{
   display:block;}
 .linkCmnts{
@@ -13739,8 +13739,8 @@ Basic Style
 
 -------------------------------- */
 .cd-breadcrumb, .cd-multi-steps {
-  width: 90%;
-  max-width: 768px;
+  /* width: 90%;
+  max-width: 768px; */
   padding: 0.5em 1em;
   margin: 1em auto;
   background-color: #edeff0;
@@ -13868,8 +13868,8 @@ Triangle breadcrumb
   .cd-breadcrumb.triangle li.current > * {
     /* selected step */
     color: #ffffff;
-    background-color: #96c03d;
-    border-color: #96c03d;
+    background-color: #3F6BD8;
+    border-color: #3F6BD8;
   }
   .cd-breadcrumb.triangle li:first-of-type > * {
     padding-left: 1.6em;
@@ -13977,7 +13977,7 @@ Multi steps indicator
   .cd-multi-steps li {
     position: relative;
     float: none;
-    margin: 0.4em 40px 0.4em 0;
+    margin: 0.4em 66px 0.4em 0;
   }
   .cd-multi-steps li:last-of-type {
     margin-right: 0;
@@ -14034,15 +14034,26 @@ Multi steps indicator
   }
 
   .cd-multi-steps.text-top li, .cd-multi-steps.text-bottom li {
-    width: 80px;
-    text-align: center;
+    /* width: 80px;
+    text-align: center; */
   }
   .cd-multi-steps.text-top li::after, .cd-multi-steps.text-bottom li::after {
     /* this is the line connecting 2 adjacent items */
     position: absolute;
-    left: 50%;
+    /* left: 50%; */
+    left: 40%;
+    width: calc(100% + 92px);
     /* 40px is the <li> right margin value */
-    width: calc(100% + 40px);
+    /* width: calc(100% + 40px); */
+  }
+  .cd-multi-steps.text-top li::after, .cd-multi-steps.text-bottom li::before {
+    /* this is the line connecting 2 adjacent items */
+    position: absolute;
+    /* left: 50%; */
+    left: 40%;
+    width: calc(100% + 92px);
+    /* 40px is the <li> right margin value */
+    /* width: calc(100% + 40px); */
   }
   .cd-multi-steps.text-top li > *::before, .cd-multi-steps.text-bottom li > *::before {
     /* this is the spot indicator */
@@ -14144,3 +14155,11 @@ Add a counter to the multi-steps indicator
     padding-top: 34px;
   }
 }
+.brdcrProps{
+  font-size: 10px;
+  font-style: inherit;}
+.linkSbtnBrdr1{
+    width: 104%;
+    border-top: 1px solid #bbb;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;}
