@@ -6507,6 +6507,8 @@
     background-clip: padding-box;
     border: 1px solid #ebedf2;
     border-radius: 0.3rem;
+    position: absolute;
+    top: 145px;
     outline: 0; }
   
   .modal-backdrop {
@@ -12030,7 +12032,7 @@
   
   select.form-control {
     padding: .4375rem .75rem;
-    border: 0;
+    /* border: 0; */
     outline: 1px solid #fff;
     color: #c9c8c8; }
     select.form-control:focus {
@@ -13223,6 +13225,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .fbIcon{
   border-radius: 60%;
@@ -13236,7 +13239,7 @@
   margin-right: 5px;
 }
 .bgimg{
-  background-image: url("/Images/baner-v2.jpg");
+  background-image: url("../images/signupBG.jpg");
   background-size: cover;
 }
 
@@ -13335,8 +13338,8 @@
 
 .fbprops{
   background: #2a6ac1;
-    border-radius: 50%;
-    height: 25px;
+    /* border-radius: 50%;
+    height: 25px; */
     padding: 4px;
     margin-right: 5px;}
 .mrg-auto{
