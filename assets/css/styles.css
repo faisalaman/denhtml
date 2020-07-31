@@ -11656,10 +11656,13 @@
     border-color: #3e4b5b; }
 
   /* Cards */
+  .pt-30{
+    padding-left: 30px;
+  }
   .card {
     border: 0;
     background: #fff; }
-    .card .card-body {
+fb    .card .card-body {
       padding: 12px;
       background-color: #FB004F;
       color: #fff;
@@ -11669,6 +11672,7 @@
         color: black;
         /* height: 7rem; */
         padding-top: 10px;
+        padding-left: 0px;
       }
       .card .card-body + .card-body {
         padding-top: 1rem; }
@@ -13192,6 +13196,30 @@
   display: flex;
   margin-bottom: 20px;
 }
+.btnb
+{
+  margin-top: 20px;
+}
+.proBanner{
+  margin-top: 150px;
+}
+.ht47
+{
+  height: 47rem;
+}
+.userinfo{
+  display: none;
+  padding-right: 0px;
+    padding-left: 30px;
+}
+.img-square-wrapper
+{
+  text-align: center;
+}
+.card-body1
+{
+  text-align: center;;
+}
 }
 
 /* Login Css */
@@ -13283,12 +13311,16 @@
   }
   .profIcons{
     font-size: 12px;
-    margin-left: 1px;
+    margin-left: 5px;
     font-weight: bolder;
   }
   .profIconProps{
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding: 0px;
+  }
+  .mb-20
+  {
+    margin-bottom: 20px;
   }
   .profIconProps1{
     padding: 0px;
@@ -13298,10 +13330,10 @@
     padding-right: 0px;
   }
   .btnprops{
-    width: 17%;
+    /* width: 17%; */
     font-size: 10px;
-    height: 1rem;
-    padding: 0px;
+    /* height: 1rem; */
+    padding: 5px 15px;
     margin: 5px;
   }
   .btnIconProps{
@@ -13311,6 +13343,7 @@
     text-align: center;
     border-radius: 3px;
     width: 100%;
+    padding: 10px;
   }
   .btnIconProps1{
     background-color: transparent;
@@ -13362,11 +13395,15 @@
   border-radius: 50%;}
 .nameProps{
   color: black;
-  margin-bottom: 0px;}
+      font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
 .clrDef{
   color: #FB004F;}
 .mailProps{
   color: black;
+  margin-bottom: 10px;;
   font-size: 12px;
   margin-left: 2px;}
 .fz-12{
@@ -13377,7 +13414,7 @@
   margin: 0px;}
 .ctgProps{
   margin-left: 30px;
-  width: 30%;}
+  display: flex;}
 .mt-40{
   margin-top: 40px;}
 .ml-25{
