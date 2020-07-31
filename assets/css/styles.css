@@ -6582,7 +6582,7 @@
   @media (min-width: 576px) {
     .modal-dialog {
       max-width: 500px;
-      margin: 30px auto; }
+      margin: 0px auto; }
     .modal-dialog-scrollable {
       max-height: calc(100% - 60px); }
       .modal-dialog-scrollable .modal-content {
@@ -10968,6 +10968,8 @@
     .btn.btn-rounded {
       border-radius: 50px; }
     .btn.btn-fw {
+      padding: 14px;
+      font-size: 12px;
       min-width: 150px; }
     .btn.btn-sm, .btn-group-sm > .btn {
       font-size: 0.875rem; }
@@ -12036,6 +12038,7 @@ fb    .card .card-body {
   
   select.form-control {
     padding: .4375rem .75rem;
+    padding: 20px;
     /* border: 0; */
     outline: 1px solid #fff;
     color: #c9c8c8; }
@@ -13249,6 +13252,7 @@ fb    .card .card-body {
   border-radius: 6px;
   width: 90%;
   margin: 0 auto;
+  padding: 20px;
 }
 .centerAlign{
   display: flex;
@@ -14204,3 +14208,5 @@ Add a counter to the multi-steps indicator
     border-top: 1px solid #bbb;
     margin-bottom: 10px !important;
     margin-top: 10px !important;}
+
+    
