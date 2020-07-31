@@ -12873,7 +12873,7 @@ fb    .card .card-body {
           .sidebar .nav .nav-item .nav-link i {
             color: inherit; }
             .sidebar .nav .nav-item .nav-link i.menu-icon {
-              font-size: 0.78rem;
+              font-size: 14px;
               line-height: 1;
               margin-right: 2px;
               /* margin-left: auto; */
@@ -13179,6 +13179,7 @@ fb    .card .card-body {
   .card-style2 {
     display: flex;
     margin-bottom: 20px;
+    margin-top: 15px;
 }
   }
 @media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
@@ -13189,7 +13190,7 @@ fb    .card .card-body {
     padding: 15px 20px;
     border-radius: 10px;
     border-style: solid;
-    height: 25rem;
+    height: 33rem;
     border-color: #FB004F;
 }
 .card-style2 {
