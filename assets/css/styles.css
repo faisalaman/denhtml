@@ -14208,5 +14208,22 @@ Add a counter to the multi-steps indicator
     border-top: 1px solid #bbb;
     margin-bottom: 10px !important;
     margin-top: 10px !important;}
+.vl {
+      border-left: 2px solid #FB004F;
+      height: 40px;
+      /* /margin-top: -5px; */
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+.vl2 {
+  border-left: 2px solid gray;
+  height: 70px;
+  margin-top: 15px;
+}
+.vl3{
+  border-left: 2px solid #FB004F;
+    height: 20px;
+    margin-left: 5px;
+}
 
     
