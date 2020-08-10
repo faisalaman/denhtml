@@ -4085,10 +4085,10 @@
     color: #198ae3;
     border-color: #198ae3;
     border: 2px solid #198ae3; }
-    .btn-outline-info:hover {
+    /* .btn-outline-info:hover {
       color: #fff;
-      background-color: #198ae3;
-      border-color: #198ae3; }
+      /* background-color: #198ae3;
+      border-color: #198ae3; } */
     .btn-outline-info:focus, .btn-outline-info.focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(25, 138, 227, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(25, 138, 227, 0.5); }
@@ -4098,7 +4098,7 @@
     .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active,
     .show > .btn-outline-info.dropdown-toggle {
       color: #fff;
-      background-color: #198ae3;
+      /* background-color: #198ae3; */
       border-color: #198ae3; }
       .btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus,
       .show > .btn-outline-info.dropdown-toggle:focus {
@@ -11352,8 +11352,8 @@
       border-color: #198ae3; }
   
   .btn-outline-info:hover, .btn-outline-info:focus, .btn-outline-info:active {
-    background: -webkit-gradient(linear, left top, right top, from(#90caf9), color-stop(99%, #047edf));
-    background: linear-gradient(to right, #90caf9, #047edf 99%);
+    /* background: -webkit-gradient(linear, left top, right top, from(#90caf9), color-stop(99%, #047edf));
+    background: linear-gradient(to right, #90caf9, #047edf 99%); */
     color: #000; }
   
   .btn-inverse-warning {
@@ -13252,7 +13252,7 @@ fb    .card .card-body {
   border-radius: 6px;
   width: 90%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 25px 20px;
 }
 .centerAlign{
   display: flex;
@@ -13373,7 +13373,9 @@ fb    .card .card-body {
   -moz-box-shadow:    3px 1px 10px 1px #ccc;  /* Firefox 3.5 - 3.6 */
   box-shadow:         3px 1px 10px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
-
+.cardText{
+  font-size: .94rem;
+}
 .fbprops{
   background: #2a6ac1;
     /* border-radius: 50%;
@@ -13487,7 +13489,7 @@ fb    .card .card-body {
 .w-40{
   width: 40%;} 
 .instaIcon{
-  color: #fff;
+  color: #FB004F;
   font-size: 35px;}
 .linkSAProps{
   background: #ece7e7;
@@ -13670,6 +13672,13 @@ fb    .card .card-body {
   margin:10px;}
 .mr-15{
   margin-right: 15px;}
+
+.borderedTable{
+  border-radius: 25px;
+  border: 2px solid #FB004F;
+}
+
+
  /* Breadcrumb Properties */
 
 
@@ -13719,6 +13728,17 @@ section h2 {
     margin: 0 auto 3em;
   }
 }
+@media only screen and (min-width: 360px) {
+  .cd-breadcrumb li.current > *, .cd-multi-steps li.current > * {
+    /* selected step */
+    color: #96c03d;
+  }
+  .no-touch .cd-breadcrumb a:hover, .no-touch .cd-multi-steps a:hover {
+    /* steps already visited */
+    color: #96c03d;
+  }
+}
+
 
 header {
   background: #2c3f4c;
@@ -14225,5 +14245,7 @@ Add a counter to the multi-steps indicator
     height: 20px;
     margin-left: 5px;
 }
-
-    
+.btn-login {
+  color: #198ae3;
+  border-color: #198ae3;
+  border: 2px solid #198ae3; }
